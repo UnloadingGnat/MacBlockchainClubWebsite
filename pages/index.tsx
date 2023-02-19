@@ -45,10 +45,10 @@ export default function Home() {
                 className="bg-gradient-to-br from-black to-stone-700 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-8xl md:leading-[5rem]"
                 variants={FADE_DOWN_ANIMATION_VARIANTS}
               >
-                <Balancer>McMaster Blockchain Club</Balancer>
+                <h1>McMaster Blockchain Club</h1>
               </motion.h1>
               <motion.p
-                className="mt-6 text-center text-white md:text-xl"
+                className="mt-6 text-center text-white md:text-2xl font-semibold"
                 variants={FADE_DOWN_ANIMATION_VARIANTS}
               >
                 <Balancer >

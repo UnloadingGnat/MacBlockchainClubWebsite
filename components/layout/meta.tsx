@@ -7,8 +7,8 @@ export default function Meta({
   description = "Building the future of blockchain at McMaster University.",
   image = `${DOMAIN}/api/og`,
 }: {
-  title?: "McMaster Blockchain Club";
-  description?: "Building the future of blockchain at McMaster University.";
+  title?: string;
+  description?: string;
   image?: string;
 }) {
   return (

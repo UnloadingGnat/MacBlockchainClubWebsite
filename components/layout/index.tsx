@@ -69,10 +69,10 @@ export default function Layout({
       </main>
       <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
         <p className="text-gray-500">
-          Built by{" "}
+          Website Built by{" "}
           <a
             className="font-medium text-gray-800 underline transition-colors"
-            href="https://www.linkedin.com/in/jaavin/"
+            href="https://jaavin.ca/"
             target="_blank"
             rel="noopener noreferrer"
           >

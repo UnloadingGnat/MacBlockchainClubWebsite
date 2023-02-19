@@ -3,7 +3,7 @@ import Layout from "@/components/layout";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import { Github, Twitter, Instagram } from "@/components/shared/icons";
+import { Github, Twitter, Instagram, Google } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
@@ -63,37 +63,76 @@ export default function Home() {
             </motion.div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-11/12 h-screen bg-[#0d0c0c] mt-[-50px]">
-        <div className="mt-[-150px] md:mt-[-350px] text-white text-xl">/<br />\<br />/<br />\<br />/<br />\<br />/<br />\<br /></div>
+      <div className="flex flex-col items-center justify-center w-11/12 h-screen bg-[#0d0c0c] mt-[-50px] z-20">
+        <div className="mt-[-200px] md:mt-[-350px] text-white text-xl">/<br />\<br />/<br />\<br />/<br />\<br />/<br />\<br /></div>
 
-        <div className="w-11/12 md:mt-16 mt-[-10px]">
-          <div className="flex flex-row justify-between gap-16 mt-16">
+        <div className="w-11/12 md:mt-16 mt-[-50px]">
+          <div className="flex flex-row justify-between gap-16 mt-16 mb-[20px] md:mb-0 ">
             <div className="max-w-xl">
               <div className="md:text-5xl font-semibold text-white">Everything you need to change the world with Blockchain</div>
 
             </div>
             <div className="md:text-xl text-[#817c73] md:mt-10">Our mission is to promote the study and implementation of Blockchain to the undergraduate and graduate students of McMaster.</div>
           </div>
-          <div className="grid grid-cols-1 gap-4 mt-16 md:sm:grid-cols-3">
-            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5">
+          <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-3 md:mt-14">
+            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5 md:hover:border-[#962845]">
               <h2 className="text-white text-2xl font-medium">Learn</h2>
               <p className="mt-2 text-[#817c73] text-lg">Learn about Blockchain through regular tutorials and workshops</p>
             </div>
-            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5">
+            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5 md:hover:border-[#C2EBC4]">
               <h2 className="text-white text-2xl font-medium">Discuss</h2>
               <p className="mt-2 text-[#817c73] text-lg">Participate in networking events, socials, meet industry professionals, and more</p>
             </div>
-            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5">
+            <div className="bg-[#131211] p-4 border-[#322e2c] border-2 shadow-md md:h-56 flex flex-col gap-5 md:hover:border-[#B3D9FF]">
               <h2 className="text-white text-2xl font-medium">Create</h2>
               <p className="mt-2 text-[#817c73] text-lg">Work with other members to create meaningful Blockchain projects</p>
             </div>
-
-
-              
           </div>
 
         </div>
       </div>
+      <div className="flex flex-col items-start justify-start w-11/12 h-screen bg-white mt-12 z-20">
+        <div className="text-3xl font-normal text-black">Our Leadership</div>
+        <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-3 md:mt-14">
+
+          <div className=" p-4  md:h-56 flex flex-col gap-1">
+            <Image
+              src="/headshot_jaavin.jpg"
+              alt="Blockchain Club logo"
+              width="250"
+              height="2500"
+              className="mr-1 rounded-xl"
+            ></Image>
+            <h2 className="text-black text-2xl font-medium">Jaavin Mohanakumar</h2>
+            <h3 className="text-black text-base font-medium pb-2 border-b-2">Founder and President</h3>
+            <p className="mt-2 text-[#817c73] text-base">Jaavin Mohanakumar is the Founder and President of McMaster Blockchain Club. He is an Engineering 1 student at McMaster University, and has previously worked at Huff, the largest independent Ethereum assembly language.</p>
+            <button
+              className="rounded-full border w-10 border-[#0173af] bg-[#0172af89] p-1.5 px-2 text-sm text-white transition-all hover:bg-[#0173af] hover:text-black mt-2"
+            >
+              <a href="https://www.linkedin.com/in/jaavinmohanakumar/" target="_blank" rel="noreferrer"><Google className="h-5 w-5 text-white" /></a>
+            </button>
+          </div>
+
+          <div className=" p-4  md:h-56 flex flex-col gap-1">
+            <h2 className="text-black text-2xl font-medium">Laksh Anand</h2>
+            <h3 className="text-black text-base font-medium">Vice President, Operations</h3>
+            <p className="mt-2 text-[#817c73] text-base">Laksh Anand is Vice President, Operations</p>
+          </div>
+
+          <div className=" p-4  md:h-56 flex flex-col gap-1"> 
+            <h2 className="text-black text-2xl font-medium">TBD</h2>
+            <h3 className="text-black text-base font-medium">Vice President, TBD</h3>
+            <p className="mt-2 text-[#817c73] text-base">Learn about Blockchain through regular tutorials and workshops</p>
+          </div>
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
 
 
     </Layout>

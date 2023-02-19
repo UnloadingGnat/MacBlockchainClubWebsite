@@ -36,8 +36,8 @@ export default function Layout({
             : "bg-white/0"
         } z-30 transition-all`}
       >
-        <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-          <Link href="/" className="flex items-center font-display text-2xl">
+        <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between  xl:mx-auto">
+          <Link href="/" className="flex items-center font-display md:text-2xl text-base">
             <Image
               src="/block-logo.png"
               alt="Blockchain Club logo"

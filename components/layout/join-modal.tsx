@@ -37,6 +37,7 @@ const SignInModal = ({
         </div>
 
         <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">
+          <a href="https://www.google.com/">
           <button
             disabled={signInClicked}
             className={`${
@@ -49,12 +50,11 @@ const SignInModal = ({
               <LoadingDots color="#808080" />
             ) : (
               <>
-                  <a href="https://www.google.com/">
                   <p>📝 Fill out the form</p>
-                </a>
               </>
             )}
           </button>
+          </a>
         </div>
       </div>
     </Modal>

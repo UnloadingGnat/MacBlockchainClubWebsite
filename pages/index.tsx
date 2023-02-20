@@ -91,46 +91,37 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="flex flex-col items-start justify-start w-11/12 h-screen bg-white mt-12 z-20">
-        <div className="text-3xl font-normal text-black">Our Leadership</div>
-        <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-3 md:mt-14">
+      <div className="flex flex-col items-start justify-start w-11/12 h-64 bg-white mt-12 z-20">
+        <div className="text-3xl font-normal text-black">Our Partners</div>
 
-          <div className=" p-4  md:h-56 flex flex-col gap-1">
-            <Image
-              src="/headshot_jaavin.jpg"
-              alt="Blockchain Club logo"
-              width="250"
-              height="2500"
-              className="mr-1 rounded-xl"
-            ></Image>
-            <h2 className="text-black text-2xl font-medium">Jaavin Mohanakumar</h2>
-            <h3 className="text-black text-base font-medium pb-2 border-b-2">Founder and President</h3>
-            <p className="mt-2 text-[#817c73] text-base">Jaavin Mohanakumar is the Founder and President of McMaster Blockchain Club. He is an Engineering 1 student at McMaster University, and has previously worked at Huff, the largest independent Ethereum assembly language.</p>
-            <a href="https://www.linkedin.com/in/jaavinmohanakumar/" target="_blank" rel="noreferrer">
-              <button
-                className="rounded-full border w-10 border-[#0173af] bg-[#0172af89] p-1.5 px-2 text-sm text-white transition-all hover:bg-[#0173af] hover:text-black mt-2"
-              >
-                <Google className="h-5 w-5 text-white" />
-              </button>
-            </a>
+
+        <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-2 md:mt-14 self-center">
+          <div className="bg-black p-4 w-[300px] md:w-[637px] md:h-56 flex flex-col gap-5 justify-center items-center">
+            <div>
+              <h2 className="text-white text-3xl">Work with us</h2>
+              <p className="mt-2 text-[#817c73] text-lg self-center">Join us in building a better future with blockchain.</p>
+              <div className="flex items-center gap-3 mt-5 group">
+                <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
+                <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Become a Partner</h3>
+              </div>
+            </div>
           </div>
 
-          <div className=" p-4  md:h-56 flex flex-col gap-1">
-            <h2 className="text-black text-2xl font-medium">Laksh Anand</h2>
-            <h3 className="text-black text-base font-medium">Vice President, Operations</h3>
-            <p className="mt-2 text-[#817c73] text-base">Laksh Anand is Vice President, Operations</p>
+          <div className="bg-black p-4 w-[300px] md:w-[637px] md:h-56 flex flex-col gap-5 justify-center items-center">
+            <div>
+              <h2 className="text-white text-3xl">Have an Inquiry?</h2>
+              <p className="mt-2 text-[#817c73] text-lg self-center">Let&apos;s Talk.</p>
+              <div className="flex items-center gap-3 mt-5 group">
+                <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
+                <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Get in Touch</h3>
+              </div>
+            </div>
           </div>
-
-          <div className=" p-4  md:h-56 flex flex-col gap-1"> 
-            <h2 className="text-black text-2xl font-medium">TBD</h2>
-            <h3 className="text-black text-base font-medium">Vice President, TBD</h3>
-            <p className="mt-2 text-[#817c73] text-base">Learn about Blockchain through regular tutorials and workshops</p>
-          </div>
-
           
+
         </div>
 
-        
+   
 
         
       </div>

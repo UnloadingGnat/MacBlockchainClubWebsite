@@ -67,18 +67,37 @@ export default function Layout({
       <main className="flex w-full flex-col items-center justify-center py-32">
         {children}
       </main>
-      <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
-        <p className="text-gray-500">
-          Website Built by{" "}
-          <a
-            className="font-medium text-gray-800 underline transition-colors"
-            href="https://jaavin.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jaavin Mohanakumar
-          </a>
-        </p>
+      <div className="absolute w-full border-t border-gray-200 bg-black py-5 text-center md:mt-0 mt-20">
+
+        <div className="p-10 flex md:flex-row flex-col items-center gap-4 ">
+          <Link href="/">
+            <Image
+              src="/block-logo.png"
+              alt="Blockchain Club logo"
+              width="160"
+              height="160"
+              className="mr-1 rounded-sm"
+            ></Image>
+          </Link>
+
+          <Link href="/team" className="text-2xl text-white font-mono md:mt-5 md:mb-0 mb-8">Our Team</Link>
+
+        </div>
+        <div className="absolute bottom-0 left-0 text-[#817c73] text-xs">© 2023 McMaster Blockchain Club</div>
+        <div className="absolute bottom-0 md:right-0 mb-3 mr-4 text-xs">
+          <p className="text-[#817c73]">
+            Website Built by{" "}
+            <a
+              className="text-[#817c73] underline underline-offset-2 transition-colors"
+              href="https://jaavin.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jaavin Mohanakumar
+            </a>
+          </p>
+
+        </div>
       </div>
     </>
   );

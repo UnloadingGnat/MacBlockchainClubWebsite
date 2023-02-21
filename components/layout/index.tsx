@@ -83,7 +83,7 @@ export default function Layout({
           <Link href="/team" className="text-2xl text-white font-mono md:mt-5 md:mb-0 mb-8">Our Team</Link>
 
         </div>
-        <div className="absolute bottom-0 left-0 text-[#817c73] text-xs">© 2023 McMaster Blockchain Club</div>
+        <div className="absolute bottom-0 left-0 text-[#817c73] text-xs md:mb-3 md:ml-4 mb-0 ml-0">© 2023 McMaster Blockchain Club</div>
         <div className="absolute bottom-0 md:right-0 mb-3 mr-4 text-xs">
           <p className="text-[#817c73]">
             Website Built by{" "}

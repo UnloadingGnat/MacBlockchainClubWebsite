@@ -53,6 +53,40 @@ export default function Home() {
 
             </div>
 
+            <div className="flex flex-col items-start justify-start w-11/12 bg-white z-20 mt-80 md:mt-0">
+                <div className="text-3xl font-normal text-black">Advisory Board</div>
+                <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-3 md:mt-14">
+
+                    <div className=" p-4  md:h-56 flex flex-col gap-1">
+                        <h2 className="text-black text-2xl font-medium">To be confirmed</h2>
+                        <h3 className="text-black text-base font-medium pb-2 border-b-2">Faculty Advisor #1</h3>
+                        <p className="mt-2 text-[#817c73] text-base">ECE Prof.</p>
+                        <a href="#" target="_blank" rel="noreferrer">
+                            <button
+                                className="rounded-full border w-10 border-[#0173af] bg-[#0172af89] p-1.5 px-2 text-sm text-white transition-all hover:bg-[#0173af] hover:text-black mt-2"
+                            >
+                                <Google className="h-5 w-5 text-white" />
+                            </button>
+                        </a>
+                    </div>
+
+                    <div className=" p-4  md:h-56 flex flex-col gap-1">
+                        <h2 className="text-black text-2xl font-medium">TBD</h2>
+                        <h3 className="text-black text-base font-medium">TBD</h3>
+                        <p className="mt-2 text-[#817c73] text-base">TBD</p>
+                    </div>
+
+                    <div className=" p-4  md:h-56 flex flex-col gap-1">
+                        <h2 className="text-black text-2xl font-medium">TBD</h2>
+                        <h3 className="text-black text-base font-medium">Vice President, TBD</h3>
+                        <p className="mt-2 text-[#817c73] text-base">Learn about Blockchain through regular tutorials and workshops</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
 
 
         </Layout>

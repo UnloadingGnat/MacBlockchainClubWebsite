@@ -112,6 +112,7 @@ export default function Home() {
               <h2 className="text-white text-3xl">Have an Inquiry?</h2>
               <p className="mt-2 text-[#817c73] text-lg self-center">Let&apos;s Talk.</p>
               <div className="flex items-center gap-3 mt-5 group">
+                {/* change button to <a> when adding link */}
                 <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
                 <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Get in Touch</h3>
               </div>

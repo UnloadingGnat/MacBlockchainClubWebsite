@@ -7,6 +7,8 @@ import { ReactNode } from "react";
 import useScroll from "@/lib/hooks/use-scroll";
 import Meta from "./meta";
 import { useSignInModal } from "./join-modal";
+import { Github, Twitter, Instagram, Google } from "@/components/shared/icons";
+
 import UserDropdown from "./user-dropdown";
 
 export default function Layout({
@@ -69,7 +71,7 @@ export default function Layout({
       </main>
       <div className="absolute w-full border-t border-gray-200 bg-black py-5 text-center md:mt-0 mt-20">
 
-        <div className="p-10 flex md:flex-row flex-col items-center gap-4 ">
+        <div className="p-10 flex md:flex-row flex-col items-center gap-4">
           <Link href="/">
             <Image
               src="/block-logo.png"
@@ -81,6 +83,23 @@ export default function Layout({
           </Link>
 
           <Link href="/team" className="text-2xl text-white font-mono md:mt-5 md:mb-0 mb-8">Our Team</Link>
+
+          <a
+            className="rounded-full border w-10 border-white bg-black p-1.5 px-2 text-sm text-white transition-all hover:bg-white hover:text-black mt-5 ml-0 md:ml-7"
+            href="https://www.linkedin.com/company/macblockchain/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Google className="h-5 w-5 ml-0.5" />
+          </a>
+          <a
+            className="rounded-full border w-10 border-white bg-black p-1.5 px-2 text-sm text-white transition-all hover:bg-white hover:text-black mt-5 ml-0 md:ml-2"
+            href="https://www.instagram.com/macblockchain/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Instagram className="h-5 w-5 ml-0.5" />
+          </a>
 
         </div>
         <div className="absolute bottom-0 left-0 text-[#817c73] text-xs md:mb-3 md:ml-4 mb-0 ml-0">© 2023 McMaster Blockchain Club</div>

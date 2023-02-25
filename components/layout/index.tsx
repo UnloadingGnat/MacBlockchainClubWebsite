@@ -24,7 +24,7 @@ export default function Layout({
 }) {
   const { data: session, status } = useSession();
   const { SignInModal, setShowSignInModal } = useSignInModal();
-  const scrolled = useScroll(50);
+  const scrolled = useScroll(20);
 
   return (
     <>
@@ -102,21 +102,7 @@ export default function Layout({
           </a>
 
         </div>
-        <div className="absolute bottom-0 left-0 text-[#817c73] text-xs md:mb-3 md:ml-4 mb-0 ml-0">© 2023 McMaster Blockchain Club</div>
-        <div className="absolute bottom-0 md:right-0 mb-3 mr-4 text-xs">
-          <p className="text-[#817c73]">
-            Website Built by{" "}
-            <a
-              className="text-[#817c73] underline underline-offset-2 transition-colors"
-              href="https://jaavin.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Jaavin Mohanakumar
-            </a>
-          </p>
-
-        </div>
+        <div className="absolute bottom-0 right-0 text-[#817c73] text-xs md:mb-3 md:mr-5 mb-2 mr-3">© 2023 McMaster Blockchain Club</div>
       </div>
     </>
   );

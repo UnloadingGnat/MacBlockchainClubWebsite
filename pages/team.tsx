@@ -88,8 +88,8 @@ export default function Home() {
                             className="mr-1 rounded-xl"
                         ></Image> */}
                         <h2 className="text-black text-2xl font-medium">Aniket Kabra</h2>
-                        <h3 className="text-black text-base font-medium pb-2 border-b-2">Vice President, Technology</h3>
-                        <p className="mt-2 text-[#817c73] text-base">Aniket Kabra is the Vice President, Technology of McMaster Blockchain Club.</p>
+                        <h3 className="text-black text-base font-medium pb-2 border-b-2">Vice President, Finance</h3>
+                        <p className="mt-2 text-[#817c73] text-base">Aniket Kabra is the Vice President, Finance of McMaster Blockchain Club.</p>
                         <a
                             className="rounded-full border w-10 border-[#0173af] bg-[#0172af89] p-1.5 px-2 text-sm text-white transition-all hover:bg-[#0173af] hover:text-black mt-2"
                             href="https://www.linkedin.com/in/aniket-kabra/"

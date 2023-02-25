@@ -91,9 +91,16 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="flex flex-col items-start justify-start w-11/12 h-64 bg-white mt-12 z-20">
+      <div className="flex flex-col items-start justify-start w-11/12 h-64 bg-white mt-12 z-20 pb-96">
         <div className="text-3xl font-normal text-black">Our Partners</div>
-
+        <a href="https://www.verbwire.com/" className="self-center mt-10 mb-8">
+          <Image
+            src="/verbwire.png"
+            alt="Verbwire Sponsor"
+            width="500"
+            height="100"
+          ></Image>
+        </a>
 
         <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-2 md:mt-14 self-center">
           <div className="bg-black p-4 w-[300px] md:w-[637px] md:h-56 flex flex-col gap-5 justify-center items-center">

@@ -7,7 +7,7 @@ import { ReactNode } from "react";
 import useScroll from "@/lib/hooks/use-scroll";
 import Meta from "./meta";
 import { useSignInModal } from "./join-modal";
-import { Github, Twitter, Instagram, Google } from "@/components/shared/icons";
+import { Instagram, Google } from "@/components/shared/icons";
 
 import UserDropdown from "./user-dropdown";
 

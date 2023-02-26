@@ -32,7 +32,7 @@ export default async function handler(req: NextRequest) {
         }}
       >
         <img
-          src={new URL("../../public/logo.svg", import.meta.url).toString()}
+          src={new URL("../../public/block-logo.png", import.meta.url).toString()}
           alt="McMaster Blockchain Club Logo"
           tw="w-20 h-20 mb-4 opacity-95"
         />

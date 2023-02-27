@@ -68,7 +68,7 @@ export default function Layout({
           </div>
         </div>
       </div>
-      <div className={`${open ? "block" : "hidden"} flex flex-col fixed top-0 left-[8%] mt-24 p-9 gap-5 w-[85%] border-gray-200 bg-white/50 backdrop-blur-lg z-30 rounded-md md:hidden`}>
+      <div className={`${open ? "block" : "hidden"} flex flex-col fixed top-0 left-[8%] mt-24 p-9 gap-5 w-[85%] border-[1px] border-gray-200 bg-white/50 backdrop-blur-lg z-30 rounded-3xl md:hidden`}>
         <Link href="/team" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Our Team</Link>
         <Link href="/resources" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Resources</Link>
         <button

@@ -10,7 +10,7 @@ export const resources = [
     {
         title: "Ethereum Whitepaper",
         description: "This introductory paper was originally published in 2014 by Vitalik Buterin, the founder of Ethereum.",
-        link: "https://www.youtube.com/watch?v=gyMwXuJrbJQ",
+        link: "https://ethereum.org/en/whitepaper/",
         linkText: "Read Whitepaper",
     },
     {

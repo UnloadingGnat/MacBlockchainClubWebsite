@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import useScroll from "@/lib/hooks/use-scroll";
 import Meta from "./meta";
 import { useSignInModal } from "./join-modal";
@@ -25,6 +25,7 @@ export default function Layout({
   const { data: session, status } = useSession();
   const { SignInModal, setShowSignInModal } = useSignInModal();
   const scrolled = useScroll(20);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -49,23 +50,34 @@ export default function Layout({
             ></Image>
             <p>McMaster Blockchain Club</p>
           </Link>
-          <div>
-            <AnimatePresence>
-              {!session && status !== "loading" ? (
-                <motion.button
-                  className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-                  onClick={() => setShowSignInModal(true)}
-                  {...FADE_IN_ANIMATION_SETTINGS}
-                >
-                  Join
-                </motion.button>
-              ) : (
-                <UserDropdown />
-              )}
-            </AnimatePresence>
+          <div className="flex gap-9">
+            {/* Make seprate copmonent later!! */}
+            {/* CHANGE MD to LG if you add more items!!!!!!! */}
+            <Link href="/team" className={"mt-1 hover:text-[#962845] md:block hidden"}>Our Team</Link>
+            <Link href="/resources" className="mt-1 hover:text-[#962845] md:block hidden">Resources</Link>
+            <div>
+              <button
+                className="md:block hidden rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                onClick={() => setShowSignInModal(true)}
+              >
+                Join
+              </button>
+              {/* Mobile menu */}
+          </div>
+          <Image src="/menu.svg" height={20} width={20} className="md:hidden no-select-or-drag top-0 left-0" onClick={() => setOpen(!open)} alt="menu bar img"></Image>
           </div>
         </div>
       </div>
+      <div className={`${open ? "block" : "hidden"} flex flex-col fixed top-0 left-[8%] mt-24 p-9 gap-5 w-[85%] border-gray-200 bg-white/50 backdrop-blur-lg z-30 rounded-md md:hidden`}>
+        <Link href="/team" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Our Team</Link>
+        <Link href="/resources" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Resources</Link>
+        <button
+          className={`${open ? "block" : "hidden"} md:hidden rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black`}
+          onClick={() => setShowSignInModal(true)}
+        >
+          Join
+        </button>
+    </div>
       <main className="flex w-full flex-col items-center justify-center py-32">
         {children}
       </main>
@@ -81,9 +93,6 @@ export default function Layout({
               className="mr-1 rounded-sm"
             ></Image>
           </Link>
-
-          <Link href="/team" className="text-2xl text-white font-mono md:mt-5 md:mb-0 mb-8">Our Team</Link>
-
           <a
             className="rounded-full border w-10 border-white bg-black p-1.5 px-2 text-sm text-white transition-all hover:bg-white hover:text-black mt-5 ml-0 md:ml-7"
             href="https://www.linkedin.com/company/macblockchain/"

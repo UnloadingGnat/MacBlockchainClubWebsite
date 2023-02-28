@@ -26,9 +26,7 @@ export default async function handler(req: NextRequest) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "white",
-          backgroundImage:
-            "linear-gradient(to bottom right, #c63270 25%, #ffffff 50%, #962845 75%)",
+          backgroundColor: "#962845",
         }}
       >
         <img

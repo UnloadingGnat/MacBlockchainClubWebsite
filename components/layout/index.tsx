@@ -53,6 +53,7 @@ export default function Layout({
           <div className="flex gap-9">
             {/* Make seprate copmonent later!! */}
             {/* CHANGE MD to LG if you add more items!!!!!!! */}
+            <Link href="/events" className={"mt-1 hover:text-[#962845] md:block hidden"}>Events</Link>
             <Link href="/team" className={"mt-1 hover:text-[#962845] md:block hidden"}>Our Team</Link>
             <Link href="/resources" className="mt-1 hover:text-[#962845] md:block hidden">Resources</Link>
             <div>
@@ -69,6 +70,7 @@ export default function Layout({
         </div>
       </div>
       <div className={`${open ? "block" : "hidden"} flex flex-col fixed top-0 left-[8%] mt-24 p-9 gap-5 w-[85%] border-[1px] border-gray-200 bg-white/50 backdrop-blur-lg z-30 rounded-3xl md:hidden`}>
+        <Link href="/events" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Events</Link>
         <Link href="/team" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Our Team</Link>
         <Link href="/resources" className={`${open ? "block" : "hidden"} mt-1 hover:text-[#962845] md:hidden self-center`}>Resources</Link>
         <button
@@ -78,7 +80,7 @@ export default function Layout({
           Join
         </button>
     </div>
-      <main className="flex w-full flex-col items-center justify-center py-32">
+      <main className="flex w-full flex-col items-center justify-center pt-32 pb-16">
         {children}
       </main>
       <div className="absolute w-full border-t border-gray-200 bg-black py-5 text-center md:mt-0 mt-20">

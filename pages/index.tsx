@@ -4,12 +4,20 @@ import { motion } from "framer-motion";
 import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import { Instagram } from "@/components/shared/icons";
 import Image from "next/image";
+import { useSignInModal } from "../components/layout/join-modal";
+import Link from "next/link";
+
+
 
 export default function Home() {
+
+  const { SignInModal, setShowSignInModal } = useSignInModal();
+
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center w-11/12 h-screen bg-[#962845] mt-[-50px]">
-        <div className="mt-[-250px]">
+      <SignInModal />
+      <div className="flex flex-col items-center justify-center w-11/12 min-h-screen bg-[#962845] mt-[-50px]">
+        <div className="mt-[-40%] md:mt-[-15%]">
             <motion.div
               className="max-w-xl px-9 xl:px-0"
               initial="hidden"
@@ -59,11 +67,27 @@ export default function Home() {
               </motion.div> 
             </motion.div>
         </div>
-      </div>
-      <div className="flex flex-col items-center justify-center w-11/12 h-screen bg-[#0d0c0c] mt-[-50px] z-20">
-        <div className="mt-[-200px] md:mt-[-350px] text-white text-xl">/<br />\<br />/<br />\<br />/<br />\<br />/<br />\<br /></div>
+      <div className="flex gap-4">
+        <Link href="/events" className="z-20">
+          <button
+            className="rounded-full border z-20 font-semibold border-black bg-black p-2 px-10 text-lg text-white transition-all hover:bg-white hover:text-black"
+          >
+            Events
+          </button>
 
-        <div className="w-11/12 md:mt-16 mt-[-50px]">
+        </Link>
+        <button
+          className="rounded-full border z-10 font-semibold border-black bg-black p-2 px-12 text-lg text-white transition-all hover:bg-white hover:text-black"
+          onClick={() => setShowSignInModal(true)}
+        >
+          Join
+        </button>
+      </div>
+      </div>
+      <div className="flex flex-col items-center justify-center w-11/12 min-h-screen bg-[#0d0c0c] pb-11 mt-[-50px] z-20">
+        <div className="absolute h-screen top-0 translate-y-[82%] text-white text-xl">/<br />\<br />/<br />\<br />/<br />\<br />/<br />\<br /></div>
+
+        <div className="w-11/12 md:mt-16 mt-[50px]">
           <div className="flex flex-row justify-between gap-16 mt-16 mb-[20px] md:mb-0 ">
             <div className="max-w-xl">
               <div className="md:text-5xl font-semibold text-white">Everything you need to change the world with Blockchain</div>
@@ -88,9 +112,9 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="flex flex-col items-start justify-start w-11/12 h-64 bg-white mt-12 z-20 pb-96">
+      <div className="flex flex-col items-start justify-start w-11/12 min-h-[6rem] bg-white mt-12 z-20">
         <div className="text-3xl font-normal text-black">Our Partners</div>
-        <a href="https://www.verbwire.com/" className="self-center mt-10 mb-8">
+        <a href="https://www.verbwire.com/" className="self-center mt-10 mb-16">
           <Image
             src="/verbwire.png"
             alt="Verbwire Sponsor"
@@ -99,29 +123,32 @@ export default function Home() {
           ></Image>
         </a>
 
-        <div className="grid grid-cols-1 gap-4  md:sm:grid-cols-2 md:mt-14 self-center">
-          <div className="bg-black p-4 w-[300px] md:w-[637px] md:h-56 flex flex-col gap-5 justify-center items-center">
-            <div>
-              <h2 className="text-white text-3xl">Work with us</h2>
-              <p className="mt-2 text-[#817c73] text-lg self-center">Join us in building a better future with blockchain.</p>
-              <div className="flex items-center gap-3 mt-5 group">
-                <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
-                <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Become a Partner</h3>
-              </div>
-            </div>
-          </div>
 
-          <div className="bg-black p-4 w-[300px] md:w-[637px] md:h-56 flex flex-col gap-5 justify-center items-center">
-            <div>
-              <h2 className="text-white text-3xl">Have an Inquiry?</h2>
-              <p className="mt-2 text-[#817c73] text-lg self-center">Let&apos;s Talk.</p>
-              <div className="flex items-center gap-3 mt-5 group">
-                {/* change button to <a> when adding link */}
-                <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
-                <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Get in Touch</h3>
-              </div>
+
+
+      <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:mt-14 self-center w-11/12 md:ml-[10%]">
+        <div className="bg-black p-4 w-[100%] md:w-[80%] flex flex-col gap-5 justify-center items-start">
+          <div className="ml-[10%]">
+            <h2 className="text-white text-3xl">Work with us</h2>
+            <p className="mt-2 text-[#817c73] text-lg self-center">Join us in building a better future with blockchain.</p>
+            <div className="flex items-center gap-3 mt-5 group">
+              <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
+              <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Become a Partner</h3>
             </div>
           </div>
+        </div>
+
+        <div className="bg-black p-4 w-[100%] md:w-[80%] md:h-56 flex flex-col gap-5 justify-center items-start">
+          <div className="ml-[10%]">
+            <h2 className="text-white text-3xl">Have an Inquiry?</h2>
+            <p className="mt-2 text-[#817c73] text-lg self-center">Let&apos;s Talk.</p>
+            <div className="flex items-center gap-3 mt-5 group">
+              {/* change button to <a> when adding link */}
+              <button className="h-9 w-9 bg-[#45403d] rounded-full text-2xl text-white mt-3 group-hover:bg-[#962845]">→</button>
+              <h3 className="text-white text-xl underline underline-offset-8 decoration-[#45403d] group-hover:decoration-[#962845]">Get in Touch</h3>
+            </div>
+          </div>
+        </div>
           
 
         </div>  

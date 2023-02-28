@@ -27,6 +27,8 @@ export default async function handler(req: NextRequest) {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#962845",
+          backgroundImage:
+            "linear-gradient(to right,#962845, #962845)",
         }}
       >
         <img

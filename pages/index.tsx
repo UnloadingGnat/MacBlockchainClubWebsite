@@ -114,14 +114,25 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-start justify-start w-11/12 min-h-[6rem] bg-white mt-12 z-20">
         <div className="text-3xl font-normal text-black">Our Partners</div>
-        <a href="https://www.verbwire.com/" className="self-center mt-10 mb-16">
-          <Image
-            src="/verbwire.png"
-            alt="Verbwire Sponsor"
-            width="500"
-            height="100"
-          ></Image>
-        </a>
+        <div className="flex flex-col md:flex-row self-center md:gap-20">
+
+          <a href="https://www.verbwire.com/" className="self-center mt-10 mb-10">
+            <Image
+              src="/verbwire.png"
+              alt="Verbwire Sponsor"
+              width="500"
+              height="100"
+            ></Image>
+          </a>
+          <a href="https://www.macengsociety.ca/" className="self-center md:mt-8 mb-10">
+            <Image
+              src="/mes.png"
+              alt="McMaster Engineering Society Affiliate"
+              width="400"
+              height="100"
+            ></Image>
+          </a>
+        </div>
 
 
 

@@ -1,15 +1,15 @@
-
-
 export const resources = [
     {
         title: "Blockchain Bootcamp",
-        description: "This course will give you a full introduction into all of the core concepts related to blockchain.",
+        description:
+            "This course will give you a full introduction into all of the core concepts related to blockchain.",
         link: "https://www.youtube.com/watch?v=gyMwXuJrbJQ",
         linkText: "Watch Video",
     },
     {
         title: "Ethereum Whitepaper",
-        description: "This introductory paper was originally published in 2014 by Vitalik Buterin, the founder of Ethereum.",
+        description:
+            "This introductory paper was originally published in 2014 by Vitalik Buterin, the founder of Ethereum.",
         link: "https://ethereum.org/en/whitepaper/",
         linkText: "Read Whitepaper",
     },
@@ -25,4 +25,4 @@ export const resources = [
         link: "https://bitcoin.org/bitcoin.pdf",
         linkText: "Read Whitepaper",
     },
-]
+];

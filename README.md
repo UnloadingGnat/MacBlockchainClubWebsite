@@ -1,6 +1,6 @@
 # McMaster Blockchain Club Website
-## https://www.macblockchain.ca
 
+## https://www.macblockchain.ca
 
 A student run educational non-profit raising awareness and fostering innovation in the field of blockchain.
 

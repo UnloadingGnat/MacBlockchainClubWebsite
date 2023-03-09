@@ -2,6 +2,7 @@ import Modal from "@/components/shared/modal";
 import {Dispatch, SetStateAction, useCallback, useMemo, useState,} from "react";
 import {LoadingDots} from "@/components/shared/icons";
 import Image from "next/image";
+import {signupForm} from "../../constants/info";
 
 const SignInModal = ({
                          showSignInModal,
@@ -33,7 +34,7 @@ const SignInModal = ({
                 </div>
 
                 <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">
-                    <a href="https://www.google.com/">
+                    <a href={signupForm}>
                         <button
                             disabled={signInClicked}
                             className={`${

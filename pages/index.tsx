@@ -6,6 +6,7 @@ import {Instagram} from "@/components/shared/icons";
 import Image from "next/image";
 import {useSignInModal} from "@/components/layout/join-modal";
 import Link from "next/link";
+import {email} from "../constants/info";
 
 export default function Home() {
     const {SignInModal, setShowSignInModal} = useSignInModal();
@@ -155,7 +156,7 @@ export default function Home() {
                             <p className="mt-2 self-center text-lg text-[#817c73]">
                                 Join us in building a better future with blockchain.
                             </p>
-                            <div className="group mt-5 flex items-center gap-3">
+                            <a href={email} className="group mt-5 flex items-center gap-3">
                                 <button
                                     className="mt-3 h-9 w-9 rounded-full bg-[#45403d] text-2xl text-white group-hover:bg-[#962845]">
                                     →
@@ -163,7 +164,7 @@ export default function Home() {
                                 <h3 className="text-xl text-white underline decoration-[#45403d] underline-offset-8 group-hover:decoration-[#962845]">
                                     Become a Partner
                                 </h3>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -174,7 +175,7 @@ export default function Home() {
                             <p className="mt-2 self-center text-lg text-[#817c73]">
                                 Let&apos;s Talk.
                             </p>
-                            <div className="group mt-5 flex items-center gap-3">
+                            <a href={email} className="group mt-5 flex items-center gap-3">
                                 {/* change button to <a> when adding link */}
                                 <button
                                     className="mt-3 h-9 w-9 rounded-full bg-[#45403d] text-2xl text-white group-hover:bg-[#962845]">
@@ -183,7 +184,7 @@ export default function Home() {
                                 <h3 className="text-xl text-white underline decoration-[#45403d] underline-offset-8 group-hover:decoration-[#962845]">
                                     Get in Touch
                                 </h3>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

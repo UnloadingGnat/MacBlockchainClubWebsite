@@ -1,5 +1,6 @@
 import Arrow from "../shared/icons/Arrow";
 import {resources} from "../../constants/resources";
+import {email} from "../../constants/info";
 
 export default function ResourceGrid() {
     return (
@@ -36,7 +37,7 @@ export default function ResourceGrid() {
                                 Do you have a resource that would benefit the community?
                             </p>
                             <a
-                                href="#"
+                                href={email}
                                 className=" mt-5  flex w-full justify-center gap-5 rounded-full border border-gray-700 bg-[#6d7379] py-2.5 text-center hover:border-white"
                             >
                                 <p className="text-gray-200">Submit Resource</p>

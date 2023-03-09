@@ -8,10 +8,10 @@ export default function Home() {
                 <div className="text-3xl font-normal text-black">Our Leadership</div>
                 <TeamGrid team="leadership"/>
             </div>
-            {/* <div className="flex flex-col items-start min-h-screen pb-12 justify-start w-11/12 bg-white z-20">
+            <div className="flex flex-col items-start min-h-fit pb-12 justify-start w-11/12 bg-white z-20">
                 <div className="text-3xl font-normal text-black">Advisory Board</div>
                 <TeamGrid team="advisory"/>
-            </div> */}
+            </div>
         </Layout>
     );
 }

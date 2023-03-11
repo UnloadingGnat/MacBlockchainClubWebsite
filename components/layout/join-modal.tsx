@@ -39,7 +39,7 @@ const SignInModal = ({
         </div>
 
         <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 md:px-16">
-          <a href={signupForm}>
+          <a href={signupForm} target="_blank" rel="noreferrer">
             <button
               disabled={signInClicked}
               className={`${

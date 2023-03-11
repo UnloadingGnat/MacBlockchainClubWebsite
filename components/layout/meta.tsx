@@ -3,32 +3,32 @@ import Head from "next/head";
 const DOMAIN = "https://macblockchain.ca";
 
 export default function Meta({
-                                 title = "McMaster Blockchain Club",
-                                 description = "Building the future of blockchain at McMaster University.",
-                                 image = `${DOMAIN}/api/og`,
-                             }: {
-    title?: string;
-    description?: string;
-    image?: string;
+  title = "McMaster Blockchain Club",
+  description = "Building the future of blockchain at McMaster University.",
+  image = `${DOMAIN}/api/og`,
+}: {
+  title?: string;
+  description?: string;
+  image?: string;
 }) {
-    return (
-        <Head>
-            <title>{title}</title>
-            <meta name="description" content={description}/>
-            <link rel="icon" href="/favicon.ico"/>
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="icon" href="/favicon.ico" />
 
-            <meta charSet="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <meta itemProp="image" content={image}/>
-            <meta property="og:logo" content={`${DOMAIN}/logo.svg`}></meta>
-            <meta property="og:title" content={title}/>
-            <meta property="og:description" content={description}/>
-            <meta property="og:image" content={image}/>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta itemProp="image" content={image} />
+      <meta property="og:logo" content={`${DOMAIN}/logo.svg`}></meta>
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
 
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:title" content={title}/>
-            <meta name="twitter:description" content={description}/>
-            <meta name="twitter:image" content={image}/>
-        </Head>
-    );
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+    </Head>
+  );
 }
